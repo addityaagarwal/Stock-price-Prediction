@@ -8,7 +8,8 @@ Since our intention was to perform time series forecasting and none of these met
 
 During the initial data processing, for every input row into the algo, 30 days high prices were feeded as X and the next day price as Y. This ensured that every input contained a time series of the last 30 days. 
 
-![image](https://github.com/aditya8503/Stock-price-Prediction/assets/168825142/9e105371-f925-41d0-8a31-8a5c90b214cc)
+![image](https://github.com/aditya8503/Stock-price-Prediction/assets/168825142/bec2a13f-0514-4ef5-80f8-2b70c9a17693)
+
 
 A 30/70 test/train split was made to validate the algorithm and then predict data 30 days into the future. 
 
