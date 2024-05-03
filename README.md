@@ -1,12 +1,16 @@
 Predicting Price of Apple Stock Exchange using GPR and Random Forest.
 
-Daily high price for about 1000 trading days was sourced from Yahoo Finance.
+Daily high price for about 1000 trading days was sourced from Yahoo Finance. Initial data looked like this: 
 
-A 30/70 test/train split was made to validate the algorithm and then predict data 30 days into the future. 
+![image](https://github.com/aditya8503/Stock-price-Prediction/assets/168825142/b4d0aad4-1b07-4137-986d-18338de0251d)
 
-For every input into the algo, 30 days high prices were feeded as X and the next day price as Y.
+Since our intention was to perform time series forecasting and none of these methods were ideal time series, we had to improve. 
+
+During the initial data processing, for every input row into the algo, 30 days high prices were feeded as X and the next day price as Y. This ensured that every input contained a time series of the last 30 days. 
 
 ![image](https://github.com/aditya8503/Stock-price-Prediction/assets/168825142/9e105371-f925-41d0-8a31-8a5c90b214cc)
+
+A 30/70 test/train split was made to validate the algorithm and then predict data 30 days into the future. 
 
 This helped us input the data for a duration of time as a row and easily build a model for forecasting price.
 
